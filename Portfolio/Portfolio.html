@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya - Portfolio | BCA Student & Developer</title>
+    <meta name="description" content="Portfolio of Bhavya - BCA student from GGSIPU, passionate about technology and eager to start career in IT field. View projects and get in touch!" />
+    <meta name="author" content="Bhavya" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Bhavya</div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                
+                <!-- Dark Mode Toggle -->
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="nav-mobile">
+                <button class="theme-toggle mobile-theme" id="mobile-theme-toggle">
+                    <i class="fas fa-moon" id="mobile-theme-icon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <div class="profile-circle">B</div>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Bhavya</span>
+                </h1>
+                <p class="hero-subtitle">BCA Student & Aspiring Developer from GGSIPU</p>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>myselfprajapatizk04@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>9136509216</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        View My Work
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Profile</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I am Bhavya, a BCA student from GGSIPU, passionate about technology and eager to start my career in the IT field. 
+                    Quick learner with strong problem-solving skills and a solid foundation in programming and computer applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="card">
+                    <h3 class="card-title">Bachelor of Computer Application</h3>
+                    <p class="card-subtitle">Guru Gobind Singh Indraprastha University • 2023-2026</p>
+                    <p class="card-text">New Delhi, India</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Diploma in Computer Application</h3>
+                    <p class="card-subtitle">Indian Institute of Computer Sciences • 2022-2023</p>
+                    <p class="card-text">New Delhi, India</p>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="additional-info">
+                <div class="info-card">
+                    <h4 class="info-title">Languages</h4>
+                    <div class="tag-list">
+                        <span class="tag">Hindi</span>
+                        <span class="tag">English</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h4 class="info-title">Certificates</h4>
+                    <p class="info-text">DCAP - Diploma in Computer Application</p>
+                </div>
+                <div class="info-card">
+                    <h4 class="info-title">Courses (NPTEL)</h4>
+                    <div class="course-list">
+                        <p>• Programming in Java (NPTEL-2025)</p>
+                        <p>• Computer Architecture (NPTEL-2024)</p>
+                        <p>• Internet of Things (NPTEL-2024)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Other Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">IoT Fundamentals</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Quick Learner</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="interests">
+                <h3 class="interests-title">Interests</h3>
+                <div class="interest-tags">
+                    <span class="interest-tag">Playing & Exploring Games</span>
+                    <span class="interest-tag">Sketching & Travelling</span>
+                    <span class="interest-tag">Artificial Intelligence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Fictional Character Website</h3>
+                    <p class="project-description">
+                        Built a responsive website using HTML, CSS, and JavaScript to showcase profiles of fictional characters with interactive info, and collapsible sections like filtering and collapsible interactive UI elements to simulate real shopping experience.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Pizza Bill Generator (Using Java)</h3>
+                    <p class="project-description">
+                        Developed a Java application to generate pizza bills with options for size, toppings, and add-ons using object-oriented programming and user input handling.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Console Application</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Myntra Clone Website</h3>
+                    <p class="project-description">
+                        Designed and developed a responsive e-commerce front-end clone of the Myntra website using HTML, CSS and JavaScript. Implemented product listings, navigation elements and interactive UI elements to simulate real shopping experience.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-download">
+                <button class="btn btn-success" id="download-resume">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h3 class="contact-subtitle">Let's Connect</h3>
+                    <p class="contact-text">
+                        I'm always open to discussing new opportunities, interesting projects, 
+                        or just having a chat about technology. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>myselfprajapatizk04@gmail.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <span>9136509216</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>New Delhi, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-card">
+                        <h3 class="form-title">Send Me a Message</h3>
+                        <p class="form-subtitle">I'll get back to you as soon as possible!</p>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2024 Bhavya. Built with HTML, CSS & JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <script src="Portfolio.js"></script>
+</body>
+</html>
