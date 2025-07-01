@@ -1,0 +1,116 @@
+ .gallery-hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+            margin-top: 70px;
+        }
+        
+        .gallery-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .gallery-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        
+        .gallery-item {
+            background: var(--background-primary);
+            border-radius: var(--border-radius-large);
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+    .gallery-image {
+    background: linear-gradient(45deg, #2563eb, #1e40af);
+}
+
+.gallery-image::before {
+    /* Keep existing SVG pattern but with updated colors */
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20 20h60v60h-60z" fill="none" stroke="white" stroke-width="2" opacity="0.5"/><path d="M30 30l40 40M70 30l-40 40" stroke="white" stroke-width="2" opacity="0.5"/></svg>');
+}
+        
+        .gallery-content {
+            padding: 1.5rem;
+        }
+        
+        .gallery-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .gallery-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .back-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .placeholder-sketch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 3rem;
+            opacity: 0.7;
+        }
+        
+        .placeholder-sketch i {
+            margin-bottom: 1rem;
+        }
+        
+        .placeholder-sketch span {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
