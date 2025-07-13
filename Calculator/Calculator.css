@@ -23,6 +23,22 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #DECBA4 0%, #3E5151 100%);
+}
+
+.main-containor{
+    align-items: center;
+    max-width: 100%;
+    padding: 80px;
+    margin: auto;
+    background-image: url("https://cdn.pixabay.com/photo/2023/12/23/08/42/island-8465139_1280.png");
+    border-radius: 20px;
+}
+
+.main-containor div{
+    backdrop-filter: blur(0px);
+    transition: var(--transition);
+    align-items: center;
+}
 
 .calculator-container {
     display: flex;
@@ -30,12 +46,12 @@ body {
     align-items: center;
     gap: 2rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     padding: 2rem;
 }
 
 .calculator-title {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 700;
     color: var(--secondary-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
