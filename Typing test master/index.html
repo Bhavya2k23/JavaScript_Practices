@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Typing Speed Master | Test Your Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="logo">
+          <i class="fas fa-keyboard"></i>
+          <h1>Typing Speed Master</h1>
+        </div>
+        <div class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <div class="typing-container">
+          <div class="text-display">
+            <div class="typing-text">
+              <p></p>
+            </div>
+          </div>
+          
+          <div class="input-area">
+            <input type="text" class="input-field" placeholder="Start typing here...">
+            <div class="stats-bar">
+              <div class="stat-box">
+                <span class="stat-label">Time</span>
+                <span class="stat-value time"><b>60</b>s</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-label">WPM</span>
+                <span class="stat-value wpm">0</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-label">CPM</span>
+                <span class="stat-value cpm">0</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-label">Accuracy</span>
+                <span class="stat-value accuracy">0%</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-label">Errors</span>
+                <span class="stat-value mistake">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button class="btn try-again">
+            <i class="fas fa-sync-alt"></i> Restart Test
+          </button>
+          <button class="btn new-text">
+            <i class="fas fa-random"></i> New Text
+          </button>
+        </div>
+      </main>
+
+      <div class="notification"></div>
+    </div>
+
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
